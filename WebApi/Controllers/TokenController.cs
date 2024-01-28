@@ -37,8 +37,8 @@ namespace WebApi.Controllers
             if (result.Succeeded)
             {
                 var token = new TokenJWTBuilder()
-                    .AddSecurityKey(JwtSecurityKey.Create("Secret_Key-12345678"))
-                 .AddSubject("Canal Dev Net Core")
+                    .AddSecurityKey(JwtSecurityKey.Create("e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"))
+                 .AddSubject("Sistema Financeiro")
                  .AddIssuer("Teste.Securiry.Bearer")
                  .AddAudience("Teste.Securiry.Bearer")
                  .AddClaim("UsuarioAPINumero", "1")
